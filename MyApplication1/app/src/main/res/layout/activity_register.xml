@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/toolbar1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="Register"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textview_re"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="right|center_horizontal"
+        app:layout_constraintRight_toLeftOf="@id/accountConvert"
+        app:layout_constraintBottom_toBottomOf="@id/accountConvert"
+        android:layout_marginRight="10dp"
+        />
+    <ImageButton
+        android:id="@+id/accountConvert"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/account_convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

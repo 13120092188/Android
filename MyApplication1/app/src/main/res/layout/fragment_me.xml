@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="Login"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user_icon"
+            />
+
+        <TextView
+            android:id="@+id/register_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_dark" />
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" or "
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/login_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="Login"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/logout_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:text="Logout"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/me_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+    </ListView>
+
+</LinearLayout>
