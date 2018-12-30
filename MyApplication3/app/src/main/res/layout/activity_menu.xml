@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <!--有一个bug,frameLayout是最基础的布局，添加到这个布局中的视图都以层叠的方式显示，相互重叠，造成界面混乱-->
+    <!--解决：将之前添加的视图从frameLayout中清除-->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg">
+
+        <!--relativelayout布局才可以使用layout_weight，linerlayout不行-->
+
+        <!--运动-->
+        <RelativeLayout
+            android:id="@+id/sport_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id = "@+id/sport_image"
+                    android:layout_width="22dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src = "@drawable/sport_unselect"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/sport_text"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text = "运 动"
+                    android:textSize="14dp"
+                    android:textColor="#82858b"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--消息-->
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id = "@+id/message_image"
+                    android:layout_width="22dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src = "@drawable/message_unselect"/>
+
+                <TextView
+                    android:id="@+id/message_text"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:gravity="center_horizontal"
+                    android:text = "消 息"
+                    android:textSize="14dp"
+                    android:textColor="#82858b"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--发现-->
+        <RelativeLayout
+            android:id="@+id/shop_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id = "@+id/shop_image"
+                    android:layout_width="22dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src = "@drawable/shop_unselect"/>
+
+                <TextView
+                    android:id="@+id/shop_text"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:gravity="center_horizontal"
+                    android:text = "发 现"
+                    android:textSize="14dp"
+                    android:textColor="#82858b"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--我-->
+        <RelativeLayout
+            android:id="@+id/me_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id = "@+id/me_image"
+                    android:layout_width="22dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src = "@drawable/me_unselect"/>
+
+                <TextView
+                    android:id="@+id/me_text"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:gravity="center_horizontal"
+                    android:text = "我"
+                    android:textSize="14dp"
+                    android:textColor="#82858b"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
