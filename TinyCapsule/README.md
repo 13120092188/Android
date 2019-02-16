@@ -11,12 +11,12 @@
  
 ## APP界面设计展示
 ### 软件加载展示
-![symbol](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/symbol.JPG)
+![symbol](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/symbol.jpg)
 ### 首页
-![homepage](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/homepage.JPG)
+![homepage](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/homepage.jpg)
 ### 胶囊内容
-![capsule](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/capsule.JPG)
-![capsule1](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/capsule1.JPG)
-![capsule2](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/capsule2.JPG)
+![capsule](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/capsule.jpg)
+![capsule1](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/capsule1.jpg)
+![capsule2](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/capsule2.jpg)
 ### 我
-![me](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/me.JPG)
+![me](https://github.com/13120092188/Android/blob/master/TinyCapsule/img_readme/me.jpg)
