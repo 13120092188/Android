@@ -1,7 +1,7 @@
 # Android
 移动应用开发技术课程作业
 
-# Homework 1
+## Homework 1
 Android 应用界面UI设计，包括一个登录界面和一个注册界面：
   
 登录界面包括标题、用户头像、用户ID编辑框、用户密码编辑框、忘记密码、登录按钮、跳转到注册界面链接、第三方登录按钮。
@@ -20,11 +20,11 @@ EditText
 Button
 
 
-# Homework 2
+## Homework 2
 实现了界面之间的跳转，加入了服务器实现了登录注册功能
 
 
-# Homework 3
+## Homework 3
 更加丰富了Gymclub应用的功能，运用了VideoView实现了视频的播放。
 使用了android.location框架来实现了定位功能：
 关键组件：
@@ -40,7 +40,7 @@ Location
 这是一个数据类，保存了定位的信息。
 
 
-# Homework 4
+## Homework 4
 实现离线缓存功能
 核心内容：
 申请sd卡权限
@@ -50,7 +50,7 @@ Location
 编写保存object对象到文件，和读取缓存
 
 
-# Homework 5
+## Homework 5
 第三方登录功能的实现（或者说尝试。。）
 以QQ登录为例
 首先需要到腾讯开放平台进行应用接入的注册
